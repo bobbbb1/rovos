@@ -16,8 +16,9 @@ c_install_path = os.path.abspath(os.path.join(current_dir, "..", "lib", "rovosds
 os.environ["CYCLONEDDS_HOME"] = c_install_path
 
 dll_path = os.path.join(c_install_path, "bin")
-if os.path.exists(dll_path):
-    os.add_dll_directory(dll_path)
+if os.name == 'nt':
+    if os.path.exists(dll_path):
+        os.add_dll_directory(dll_path)
 
 python_src_path = os.path.abspath(os.path.join(current_dir, "..", "lib", "rovosds", "dds"))
 if python_src_path not in sys.path:
