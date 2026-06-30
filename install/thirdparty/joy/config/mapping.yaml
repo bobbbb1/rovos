@@ -1,0 +1,30 @@
+axis_invert:
+  a1: '-1'
+  a3: '-1'
+  a0: '1'
+  a2: '1'
+  a4: '1'
+  a5: '1'
+movement:
+  Maju: a1(1)
+  Mundur: a1(-1)
+  Boost Maju: b0
+  Geser Kanan: a0(1)
+  Geser Kiri: a0(-1)
+  Kedalaman Up: b5
+  Kedalaman Down: b7
+  Belok Kanan: b10
+  Belok Kiri: b9
+  Roll Kanan: a2(1)
+  Roll Kiri: a2(-1)
+  Pitch Depan: a3(1)
+  Pitch Belakang: a3(-1)
+gripper:
+  Griper Open/Close: b2
+  Griper Roll: b3
+  Griper Pitch: b1
+mode:
+  Mode Switch: b4
+  Deepth Lock: b11
+  Rotation Lock: b14
+  Emergency: b12

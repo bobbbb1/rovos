@@ -1,0 +1,13 @@
+{
+  "packages": [
+    {
+      "name": "joy",
+      "executable": "main.py",
+      "cli": "rovjoy",
+      "dependencies": {
+        "PyYAML": "6.0.3",
+        "pillow": "12.1.0"
+      }
+    }
+  ]
+}

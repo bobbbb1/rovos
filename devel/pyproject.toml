@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rovos2"
+version = "2.0.0"
+description = "ROVOS2 Framework - Python Only Build Engine with Devel Folder"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "Mars", email = "mars@rovos.local" }
+]
+dependencies = [
+    "opencv-python",
+    "pyserial"
+]
+
+[tool.setuptools]
+# Baris sakti: Beritahu Python untuk mencari package di dalam folder 'devel'
+package-dir = {"" = "devel"}
+packages = ["core", "rovos", "msgs"]
