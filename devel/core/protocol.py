@@ -19,7 +19,7 @@ dll_path = os.path.join(c_install_path, "bin")
 if os.path.exists(dll_path):
     os.add_dll_directory(dll_path)
 
-python_src_path = os.path.abspath(os.path.join(current_dir, "..", "lib", "rovosds", "cyclonedds-python"))
+python_src_path = os.path.abspath(os.path.join(current_dir, "..", "lib", "rovosds", "dds"))
 if python_src_path not in sys.path:
     sys.path.insert(0, python_src_path)
 
